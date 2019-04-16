@@ -1,3 +1,4 @@
+
 % Approximation(computed convolution)
 clf
 delta = 0.01;
@@ -9,6 +10,7 @@ tt = 0:delta:10; % note: it’s twice as long as ‘t’
 plot(tt, y, 'LineWidth', 2);
 xlim([0 5])
 hold on;
+
 % Theoretical convolution
 delta2 = 0.1;
 t = 0:delta2:5;
@@ -27,6 +29,7 @@ tt = -4:delta:12;
 plot(tt, y, 'LineWidth', 2);
 xlim([-2 6])
 hold on;
+
 % Theoretical convolution
 delta2 = 0.2;
 t = -2:delta2:6;
@@ -48,6 +51,7 @@ tt = -4:delta:12;
 plot(tt, y, 'LineWidth', 2);
 xlim([-2 6])
 hold on;
+
 % Theoretical convolution
 delta2 = 0.2;
 t = -2:delta2:6;
@@ -56,6 +60,7 @@ plot(t, y2, 'ro', 'MarkerFaceColor', 'r');
 xlim([-2 6])
 axis([-2 6 -.5 .5]);
 grid on;
+
 % Approximation(computed convolution)
 figure(4)
 delta = 0.01;
@@ -67,6 +72,7 @@ tt = -4:delta:12;
 plot(tt, y, 'LineWidth', 2);
 xlim([0 5])
 hold on;
+
 % Theoretical convolution
 delta2 = 0.2;
 t = -2:delta2:6;
@@ -75,6 +81,7 @@ plot(t, y2, 'ro', 'MarkerFaceColor', 'r');
 xlim([-2 6])
 axis([-2 6 -1 1]);
 grid on;
+
 %Commutative Property
 % x*h = h*x
 figure(5);
@@ -91,6 +98,7 @@ hold on;
 plot(tt,y2,'r:', 'LineWidth', 6);
 xlim([-2 6])
 legend('x*h', 'h*x');
+
 ENGR 315 - Lab 4
 3
 title('Commutative Property of Convolution');
@@ -118,6 +126,7 @@ legend('(x*h1)*h2', 'x*(h1*h2)');
 title('Associative Property of Convolution');
 axis([-8 10 -7 12])
 grid on;
+
 %%Distributive Property of Convolution
 % x*h1 + x*h2 = x*(h1+h2)
 figure(7);
